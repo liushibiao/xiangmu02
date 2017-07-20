@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--优先使用IE最新版本和Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1"/>
+    <!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--禁止浏览器自动的识别-电话号码-email--->
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!--是否启用Web全屏-->
+    <meta name="apple-mobile-web-app-capable" content='yes'/>
+    <meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+    <!--设置苹果工具栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content='black'/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/haodai.css"/>
+</head>
+<body>
+  <article>
+      <h1>快速搜索消费贷款</h1>
+      <p>
+          <span>贷款金额：</span>
+          <span>不足一万可用小数表示</span>
+      </p>
+      <div class="div1">
+          <div>
+              <input type="text"/>
+              <ul>
+                  <li>111</li>
+                  <li>222</li>
+                  <li>3333</li>
+                  <li>444</li>
+              </ul>
+          </div>
+          <button><img src="img/1.png"/></button>
+      </div>
+
+      <p>贷款期限：</p>
+
+      <div class="div2">
+          <div>
+              <input type="text"/>
+              <ul>
+                  <li>111</li>
+                  <li>222</li>
+                  <li>3333</li>
+                  <li>444</li>
+              </ul>
+          </div>
+          <button><img src="img/1.png"/></button>
+      </div>
+
+      <button>搜索一下</button>
+
+      <p>9164种信贷产品 2000家银行 1403家小贷公司</p>
+  </article>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+    function btn(x){
+        $(x).find('div ul').hide();
+        $(x).find('button').click(function(){
+            $(x).find('div ul').toggle();
+            $(x).find('div ul li').click(function(){
+                $(x).find('div input').val($(this).html());
+                $(x).find('div ul').hide();
+            })
+        })
+    }
+    btn('.div1');
+    btn('.div2');
+
+</script>
+</html>

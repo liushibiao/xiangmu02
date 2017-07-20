@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+input::-webkit-input-placeholder {
+  color: #a9a9a9; }
+
+article {
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 30px 30px;
+  color: white; }
+  article > h1 {
+    font-size: 28px; }
+  article > p {
+    width: 100%;
+    margin-top: 20px; }
+    article > p:first-of-type {
+      display: flex;
+      justify-content: space-between; }
+    article > p:last-of-type {
+      text-align: center; }
+  article > button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #408cff;
+    border: none;
+    color: white; }
+  article > div {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    display: flex;
+    position: relative;
+    background-color: white;
+    margin-top: 10px; }
+    article > div > div {
+      width: 90%;
+      height: 50px;
+      border-right: 1px solid gray; }
+      article > div > div > input {
+        width: 100%;
+        height: 50px; }
+      article > div > div > ul {
+        width: 100%;
+        border: 1px solid lightgray;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        z-index: 999; }
+        article > div > div > ul > li {
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          text-indent: 15px;
+          color: black; }
+          article > div > div > ul > li:hover {
+            background-color: #35c5ff; }
+    article > div > button {
+      width: 10%;
+      height: 3rem;
+      line-height: 3rem;
+      background-color: white;
+      border: none; }
+
+/*# sourceMappingURL=haodai.css.map */
